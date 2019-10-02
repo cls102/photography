@@ -1,3 +1,8 @@
+@import "contact";
+@import "blog";
+@import "pageone";
+@import "blog";
+
 $primary-color: #fff;
 
 * {
@@ -96,7 +101,7 @@ body {
 // Gallery Content
 
 .wrap {
-  width: 73%;
+  // width: 78%;
   // height changed from vh to auto
   height: auto;
   margin-top: -190px;
@@ -123,13 +128,13 @@ body {
 .medium {
   width: 504px;
   height: 648px;
-  padding: 5px;
+  padding: 3px;
 }
 
 .small {
   width: 504px;
   height: 582px;
-  padding: 5px;
+  padding: 3px;
 }
 
 .nav-mobile {
