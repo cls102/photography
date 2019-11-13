@@ -1,7 +1,13 @@
 @import "contact";
+
 @import "blog";
 @import "pageone";
-@import "blog";
+@import "reset";
+@import "bloggratitude";
+@import "reset";
+@import "bloginterest";
+@import "reset";
+@import "blogcomfort";
 
 $primary-color: #fff;
 
@@ -36,6 +42,7 @@ body {
   overflow: hidden;
 
   h1 {
+    font-size: 31px;
     margin-bottom: 25px;
     margin-left: 3px;
   }

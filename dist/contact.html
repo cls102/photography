@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
+    <link rel="shortcut icon" href="img/camera-icon.png" type="image/png" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap"
       rel="stylesheet"
@@ -26,11 +26,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Contact</title>
+    <title>Contact - Lens</title>
   </head>
   <body id="background">
     <div class="orange">
-      <h4><a href="#">Lens</a></h4>
+      <h4><a href="index.html">Lens</a></h4>
       <a href="#"><img onclick="toggleNav()" src="img/menu.png" alt=""/></a>
     </div>
 
@@ -40,7 +40,6 @@
         <a href="lifestyle.html"><li>Lifestyle</li></a>
         <a href="blog.html"><li>Blog</li></a>
         <a href="contact.html"><li class="current">Contact</li></a>
-        <a href="readme.html"><li>Read Me</li></a>
       </ul>
     </div>
 
@@ -67,7 +66,7 @@
     </div>
 
     <div class="wrap">
-      <a href="" class="hover"><img src="img/london-.jpg" alt=""/></a>
+      <img src="img/contact.jpg" alt="" />
       <div class="contactInfo">
         <h3>About Lens Photo</h3>
         <p>Photography courtesy of the internet.</p>
@@ -79,8 +78,41 @@
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iure.
         </p>
+        <!-- <div id="myBtn"> -->
+        <!-- <a href=""><div class="button">Submit</div> </a> -->
+        <button id="myBtn">Open Form</button>
+        <!-- </div> -->
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p class="submit-paragraph">Client Inquiries</p>
+            <label class="submit-label" for="uname">Name *</label><br />
 
-        <a href=""><div class="button">Submit</div> </a>
+            <p class="name">
+              <input type="text" placeholder="" name="uname" required /><br />
+              <!-- <label class="submit-label" for="psw">First Name</label> -->
+            </p>
+
+            <p class="name">
+              <label class="submit-label" for="psw">Email Address *</label
+              ><br />
+              <input type="text" placeholder="" name="uname" required /><br />
+              <!-- </p> -->
+              <br />
+              <label class="submit-label" for="psw">Message *</label>
+              <br />
+              <textarea
+                type="password"
+                placeholder=""
+                name="psw"
+                required
+              ></textarea>
+              <br />
+
+              <button type="submit">Submit</button>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
     <script src="js/main.js" type="text/javascript"></script>
