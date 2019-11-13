@@ -197,6 +197,82 @@ body {
   display: none;
 }
 
+// below is for contact form for all viewing sizes
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 45%;
+
+  .submit-paragraph {
+    font-size: 18px;
+    color: #333;
+  }
+
+  .submit-label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .first-last {
+    display: inline-block;
+  }
+
+  .name {
+    margin-right: 5px;
+    margin-top: 10px;
+
+    input {
+      width: 110%;
+      height: 35px;
+      border-style: none;
+      background-color: #f3f3f3;
+      border: 1px solid #d2d2d2;
+      border-radius: 2px;
+    }
+    textarea {
+      width: 110%;
+      height: 75px;
+      border-style: none;
+      background-color: #f3f3f3;
+      border: 1px solid #d2d2d2;
+      border-radius: 2px;
+    }
+  }
+}
+
+.close {
+  color: #333333;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 // --------------------------------------------------------------for laptop viewing
 
 @media only screen and (max-width: 1060px) {
@@ -215,6 +291,7 @@ body {
       width: 100%;
 
       margin-top: 20px;
+      margin-bottom: 50px;
       color: gray;
       padding-left: 0;
 
@@ -546,6 +623,88 @@ body {
   //     background-color: #222;
   //   }
   // }
+
+  //
+
+  // below is for contact form for when veiwing in mobile
+
+  @media only screen and (max-width: 600px) {
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0); /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 100%;
+
+      .submit-paragraph {
+        font-size: 18px;
+        color: #333;
+      }
+
+      .submit-label {
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .first-last {
+        display: inline-block;
+      }
+
+      .name {
+        margin-right: 5px;
+        margin-top: 10px;
+
+        input {
+          width: 110%;
+          height: 35px;
+          border-style: none;
+          background-color: #f3f3f3;
+          border: 1px solid #d2d2d2;
+          border-radius: 2px;
+        }
+        textarea {
+          width: 110%;
+          height: 75px;
+          border-style: none;
+          background-color: #f3f3f3;
+          border: 1px solid #d2d2d2;
+          border-radius: 2px;
+        }
+      }
+    }
+
+    .close {
+      color: #333333;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  //
 
   @media (min-width: 801px) and (max-width: 1200px) {
     .orange {
